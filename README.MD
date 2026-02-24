@@ -68,3 +68,17 @@
    ```jsx
    docker run -p 5173:5173 -v "$(pwd):/app" -v /app/node_modules image-name
    ```
+
+5. Publish to docker hub
+
+   step 1:
+
+   ```jsx
+   docker tag image-name dockerhub-username/image-name
+   ```
+
+   step 2:
+
+   ```jsx
+   docker push dockerhub-username/image-name
+   ```
